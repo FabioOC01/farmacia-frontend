@@ -69,8 +69,8 @@ function validatePassword(inputElement, errorElement) {
 }
 
 /**
- * Limpia los mensajes de error y estilos de un formulario.
- * @param {HTMLFormElement} formElement - El formulario cuyos errores se limpiarán.
+
+ * @param {HTMLFormElement} formElement 
  */
 function clearFormErrors(formElement) {
     const errorMessages = formElement.querySelectorAll('.error-message');
@@ -79,7 +79,7 @@ function clearFormErrors(formElement) {
     const errorInputs = formElement.querySelectorAll('.border-red-500');
     errorInputs.forEach(el => {
         el.classList.remove('border-red-500');
-        if (!el.classList.contains('border-gray-300')) { // Evitar añadir si ya está
+        if (!el.classList.contains('border-gray-300')) { 
              el.classList.add('border-gray-300');
         }
     });
